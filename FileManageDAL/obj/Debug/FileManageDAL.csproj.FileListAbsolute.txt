@@ -1,0 +1,15 @@
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\FileManageDAL.dll.config
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\FileManageDAL.dll
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\FileManageDAL.pdb
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\EntityFramework.dll
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\EntityFramework.xml
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\obj\Debug\FileManageDAL.csproj.CoreCompileInputs.cache
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\obj\Debug\FileManageDAL.csproj.CopyComplete
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\obj\Debug\FileManageDAL.dll
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\obj\Debug\FileManageDAL.pdb
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\DotNetZip.dll
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\DotNetZip.pdb
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\bin\Debug\DotNetZip.xml
+C:\Users\deytek\source\repos\FileManage\FileManageDAL\obj\Debug\FileManageDAL.csprojAssemblyReference.cache

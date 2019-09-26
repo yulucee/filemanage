@@ -1,0 +1,157 @@
+﻿ 	//public ActionResult SendShareMail(int DosyaId,int[] UserId)
+        //{
+        //    bool result = false;
+        //    var paylasilacakDosyaId = DosyaId;
+        //    var erisdosya = db.Dosyas.Where(x => x.DosyaId == DosyaId && x.Durumu == null).SingleOrDefault();
+        //    var dosyaadi = erisdosya.DosyaAdi;
+        //    var dosyami = erisdosya.DosyaMi;
+        //    var olusanlink = "";
+        //    ShareLink share = new ShareLink();
+        //    for (int i = 0; i < UserId.Count(); i++)
+        //    {
+        //        var kullaniciId = UserId[i];
+        //        var isexist = db.ShareLinks.Where(x => x.DosyaId == DosyaId && x.PaylastigimKisiler == kullaniciId && x.Durumu == null).SingleOrDefault();
+        //        if(isexist == null)
+        //        {
+        //            Guid g;
+        //            g = Guid.NewGuid();
+        //            var linkguid = g;
+        //            var id = UserId[i];
+        //            var eris = db.Kullanicis.Where(x => x.KullaniciId == id).Select(x => x.KullaniciMaili).Single();
+        //            olusanlink = Url.Action("ShareWithLink", "Klasor", new { code = linkguid }, "http");
+        //            TempData["linkpaylasmabasarili"] = "Link paylasimi basariyla gerceklesmistir.";
+        //            var body = "Paylaşılan dosyayı görmek için linke tıklayınız.." + "\n" + olusanlink;
+        //            string subject = "Paylaşılan Dosyanın Linki" + id;
+        //            //var gonderilecekmail = eris;
+        //            //var gonderilecekmail = "ibrahimyuluce@hotmail.com";
+        //            //SendEmail(body, subject, gonderilecekmail);
+        //            share.DosyaId = paylasilacakDosyaId;
+        //            share.DosyaAdi = dosyaadi;
+        //            share.DosyaMi = dosyami;
+        //            share.PaylastigimKisiler = UserId[i];
+        //            share.Guid = linkguid.ToString();
+        //            share.Global = null;
+        //            db.ShareLinks.Add(share);
+        //            db.SaveChanges();
+        //        }
+        //        else
+        //        {
+        //            TempData["hata"] = "Zaten var";
+        //        } 
+        //    }
+        //    result = true;
+        //    return Json(new { result = result, olusanlink = olusanlink }, JsonRequestBehavior.AllowGet);
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MYDİCTİONARY.VALUES.KEYS
+
+190720547422
+
+                        @*<div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" value="1">
+                                <label class="form-check-label" for="exampleCheck1">Önizleme</label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" value="2">
+                                <label class="form-check-label" for="exampleCheck1">Indirme</label>
+                            </div>*@
+
+https://select2.org/programmatic-control/events
+
+
+          var ConfirmFileShare111 = function (id) {
+          $("#hiddenDosyaId").val(id);
+          var id = $("#hiddenDosyaId").val();
+          $(".tabletablo").html("");
+          $.ajax({
+              type:"POST",
+              url: "/Klasor/Info",
+              data: { id: id },
+              success: function (data) {
+                  if (data.result == true) {
+                      $("#dosyapaylasim").modal('show');
+                      $(".tabletablo").append(data.userlistesi);
+                      var a = "";
+                      var arr = [];
+                      var trid = "";
+                      var dict = [];
+                      $("input[name='yetki']").click(function () {
+                          trid = $(this).closest('tr').attr('id');
+                          a = "'.form-check-input" + trid + "'";
+                          var thiselement = $(".form-check-input" + trid);
+                          arr = [];
+                          var i = 0;
+                          thiselement.each(function () {
+                              if (this.checked) {
+                                  arr[i++] = $(this).val();
+                              }
+                          })
+                          if (dict.some(e => e.Id == trid)) {
+                              dict = dict.filter(function (obj) {
+                                  return obj.Id !== trid;
+                              });
+                          }
+                          dict.push({ Id: trid, Value: arr });
+                          console.log(dict);
+                          
+                      });
+                      $("#btnyetkiajax").click(function () {
+                          $.ajax({
+                              type: "POST",
+                              url: "@Url.Action("YetkiDegisikligiAjax", "Klasor")",
+                              data: { "myDictionary" : dict },
+                              success: function () {
+                                  foo();
+                              }
+                          })
+                      });
+                  }
+                  else {
+                      fooerror();
+                  }
+              }
+              })
+        }
+
+        $("#kisilerinbulunduguselect").on("select2:select", function (e) {
+        var data = e.params.data.text; //kullaniciismi
+        var userId = e.params.data.id;; // kullaniciid
+        $(".tabletablo").append("<tr id='" + userId + "'><td>" + data + "</td><td>" + '@DateTime.Now.ToString().Substring(0,9)' + "</td><td><div class='form-check'><input type='checkbox' class='form-check-input" + userId + "' name='authoritydelete' id='yeniCheck7' value='1'><label class='form-check-label' style='margin-right:5px;'for='yeniCheck7'>Önizleme</label><input type='checkbox' class='form-check-input" + userId + "' name='authoritydelete' id='yeniCheck7' value='2'><label class='form-check-label' for='yeniCheck7'>Indirme</label></div><td></tr>");
+            var arr = [];
+            var dict = [];
+            $("input[name='authoritydelete']").click(function () {
+                trid = $(this).closest('tr').attr('id');
+                a = "'.form-check-input" + trid + "'";
+                var thiselement = $(".form-check-input" + trid);
+                arr = [];
+                var i = 0;
+                thiselement.each(function () {
+                    if (this.checked) {
+                        arr[i++] = $(this).val();
+                    }
+                })
+                if (dict.some(e => e.Id == trid)) {
+                    console.log('Exists');
+                    dict = dict.filter(function (obj) {
+                        return obj.Id !== trid;
+                    });
+                }
+                dict.push({ Id: trid, Value: arr });
+                console.log(dict);
+            });
+        })
+entity framework effect/affold

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManage", "FileManage\FileManage.csproj", "{516C629D-AF1C-41BA-B752-F6D8EBB96820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManageDAL", "FileManageDAL\FileManageDAL.csproj", "{B59BA357-7896-4382-90EA-26B6062DB5E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManage.Unittest", "FileManage.Unittest\FileManage.Unittest.csproj", "{B96E9380-DC9A-4AA4-AB00-D241A1F82C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManage.Selenium", "FileManage.Selenium\FileManage.Selenium.csproj", "{DC272F56-8546-4FF3-90EC-E4E567D787A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{516C629D-AF1C-41BA-B752-F6D8EBB96820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{516C629D-AF1C-41BA-B752-F6D8EBB96820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{516C629D-AF1C-41BA-B752-F6D8EBB96820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{516C629D-AF1C-41BA-B752-F6D8EBB96820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B59BA357-7896-4382-90EA-26B6062DB5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59BA357-7896-4382-90EA-26B6062DB5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59BA357-7896-4382-90EA-26B6062DB5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59BA357-7896-4382-90EA-26B6062DB5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B96E9380-DC9A-4AA4-AB00-D241A1F82C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96E9380-DC9A-4AA4-AB00-D241A1F82C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96E9380-DC9A-4AA4-AB00-D241A1F82C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96E9380-DC9A-4AA4-AB00-D241A1F82C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC272F56-8546-4FF3-90EC-E4E567D787A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC272F56-8546-4FF3-90EC-E4E567D787A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC272F56-8546-4FF3-90EC-E4E567D787A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC272F56-8546-4FF3-90EC-E4E567D787A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D7DDD1C-9CA8-499C-B2CF-6961B0DC9AB4}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://91.229.44.247/tfs/staj
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FileManage\\FileManage.csproj
+		SccProjectName1 = FileManage
+		SccLocalPath1 = FileManage
+		SccProjectUniqueName2 = FileManageDAL\\FileManageDAL.csproj
+		SccProjectName2 = FileManageDAL
+		SccLocalPath2 = FileManageDAL
+		SccProjectUniqueName3 = FileManage.Unittest\\FileManage.Unittest.csproj
+		SccProjectName3 = FileManage.Unittest
+		SccLocalPath3 = FileManage.Unittest
+		SccProjectUniqueName4 = FileManage.Selenium\\FileManage.Selenium.csproj
+		SccProjectName4 = FileManage.Selenium
+		SccLocalPath4 = FileManage.Selenium
+	EndGlobalSection
+EndGlobal
